@@ -60,7 +60,7 @@ $start-day: (
 
   @each $day, $count in $start-day {
     &--start-day--#{$day} .calendar__day:first-child {
-      margin-left: $count * ($day-size + $day-gap);
+      margin-left: $count * $day-size + ($count - 1) * $day-gap;
     }
   }
 
