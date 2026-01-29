@@ -1,6 +1,7 @@
 $calendar-padding: 10px;
 $day-size: 100px;
 $day-gap: 1px;
+$border-width: $day-gap;
 $week-width: $day-size * 7 + $day-gap * 6 + $calendar-padding * 2;
 $start-day: (
   mon: 0,
@@ -23,7 +24,7 @@ $start-day: (
     width: $day-size;
     height: $day-size;
     background-color: $gray;
-    border: 1px solid $black;
+    border: $border-width solid $black;
     position: relative;
     cursor: pointer;
     transition-timing-function: ease-in-out;
